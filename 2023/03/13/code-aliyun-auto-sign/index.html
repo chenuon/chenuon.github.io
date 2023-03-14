@@ -129,15 +129,15 @@
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="emlog">emlog<small>(1)</small></div>
-                            
-                        </li>
-                            
-                        <li><div data-rel="github">github<small>(1)</small></div>
-                            
-                        </li>
-                            
                         <li><div data-rel="hexo">hexo<small>(3)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="alist">alist<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="emlog">emlog<small>(1)</small></div>
                             
                         </li>
                             
@@ -145,7 +145,7 @@
                             
                         </li>
                             
-                        <li><div data-rel="alist">alist<small>(1)</small></div>
+                        <li><div data-rel="github">github<small>(1)</small></div>
                             
                         </li>
                             
@@ -219,7 +219,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="30">
-<input type="hidden" id="yelog_site_word_count" value="14.9k">
+<input type="hidden" id="yelog_site_word_count" value="15.1k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -253,7 +253,27 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a class="color1">alist</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">drive</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">网盘</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">阿里云盘</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">emlog</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ssl</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -270,26 +290,6 @@
     
     <li class="article-tag-list-item">
         <a class="color5">hexo</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">alist</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">drive</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">网盘</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">emlog</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color4">ssl</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -337,6 +337,10 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color5">plan</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color1">gitee</a>
     </li>
     
@@ -346,10 +350,6 @@
     
     <li class="article-tag-list-item">
         <a class="color2">阿里code</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">plan</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -480,7 +480,7 @@
         
         <a  class="程序源码 alist "
            href="/2023/02/19/code-alist-drive/"
-           data-tag="阿里云盘,alist,drive,网盘"
+           data-tag="alist,drive,网盘,阿里云盘"
            data-author="" >
             <span class="post-title" title="巧用alist挂载各大网盘">巧用alist挂载各大网盘</span>
             <span class="post-date" title="2023-02-19 11:35:29">2023/02/19</span>
@@ -744,12 +744,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2023-03-13 22:10:03'>2023-03-13 16:01</time>
+        创建时间:<time class="date" title='更新时间: 2023-03-14 21:58:20'>2023-03-13 16:01</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:913</span>
+        <span>字数:1.1k</span>
         
         
         
@@ -782,8 +782,10 @@
 </tr>
 </table>
 
-<pre><code>1、github账号
-2、push-token</code></pre><h3 id="github配置"><a href="#github配置" class="headerlink" title="github配置"></a>github配置</h3><p>1,创建一个新的仓库，命名<code>aliyun-signin-action</code></p>
+<blockquote>
+<p>1、github账号<br>2、3个token（<font color="red">特别注意，此3各token建立一个.txt的文本文档记录保存</font>）</p>
+</blockquote>
+<h3 id="github配置"><a href="#github配置" class="headerlink" title="github配置"></a>github配置</h3><p>1,创建一个新的仓库，命名<code>aliyun-signin-action</code></p>
 <blockquote>
 <p>不需要 Fork 本仓库, 采用 <code>uses</code> 的方式引用本仓库 Action, 实现自动更新</p>
 </blockquote>
@@ -793,7 +795,8 @@
 </blockquote>
 <p><img src="https://img.chenuon.cn/img/creat.png" alt="creat.png"></p>
 <p><img src="https://img.chenuon.cn/img/signin.png" alt="signin.png"></p>
-<p>编写内容如下，先贴上完整参数：</p>
+<p>编写内容如下，先贴上完整参数来提交保存这个signin.yml文件：</p>
+<p>(后面还有我自己的参数，只用了这完整参数中的一小部分，届时可参考我的依葫芦画瓢)</p>
 <pre><code>name: Aliyun Signin
 
 on:
@@ -821,11 +824,14 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           SMTP_SENDER: ${{ secrets.SMTP_SENDER }}
-          SMTP_RECEIVER: ${{ secrets.SMTP_RECEIVER }}</code></pre><p>根据自身需求填写<code>secrets</code>，添加方式如下：</p>
-<p>在仓库的 <code>Settings</code> -&gt; <code>Secrets and Variables</code> -&gt; <code>Actions</code> 中点击 <code>New repository secret</code> 按照推送需要添加 Secrets.<br>添加时 <code>Name</code> 为下方全大写的配置 key, <code>Secret</code> 为对应的值, 均不需要引号.</p>
-<p>如果想推送消息，根据自己想用的推送方式，填写在<code>PUSH_TYPES: &#39;&#39;</code>这里的单引号内(如<code>TG</code>就填<code>TELEGRAM</code>，<code>server酱</code>就填<code>SERVERCHAN</code>,<code>邮箱</code>就填<code>SMTP</code>，<code>PUSHPLUS</code>就填写<code>PUSHPLUS</code>)</p>
-<p>这里我建议用pushplus(<a href="https://www.pushplus.plus/" target="_blank" rel="noopener">https://www.pushplus.plus/</a>)</p>
-<p>注册之后发送消息那里获取token，下面有详细说明每个参数的意思：</p>
+          SMTP_RECEIVER: ${{ secrets.SMTP_RECEIVER }}</code></pre><p>根据自身需求填写相对应的参数后添加，添加方式如下：</p>
+<blockquote>
+<p>在仓库的 <code>Settings</code> -&gt; <code>Secrets and Variables</code> -&gt; <code>Actions</code> 中点击 <code>New repository secret</code> 按照推送需要添加 Secrets.(<font color="red">这里注意是仓库的setting，而不是github网页右上角个人头像点开后里面的setting</font>)<br>添加时 <code>Name</code> 为下方<font color="red">全大写的配置 key</font>, <code>Secret</code> 为对应的值, 均不需要引号.</p>
+</blockquote>
+<p><img src="https://img.chenuon.cn/img/code_setting.png" alt="code_setting"></p>
+<p>如果想推送消息，根据自己想用的推送方式，填写在<code>PUSH_TYPES: &#39;&#39;</code>这里的<strong><u>单引号内</u></strong>(如<code>TG</code>就填<code>TELEGRAM</code>，<code>server酱</code>就填<code>SERVERCHAN</code>,<code>邮箱</code>就填<code>SMTP</code>，<code>PUSHPLUS</code>就填写<code>PUSHPLUS</code>)</p>
+<p>这里我建议用pushplus(<a href="https://www.pushplus.plus/),注册之后发送消息那里获取token" target="_blank" rel="noopener">https://www.pushplus.plus/),注册之后发送消息那里获取token</a></p>
+<p>下面有详细说明每个参数的意思：</p>
 <ul>
 <li><code>REFRESH_TOKENS</code> [必填]阿里云盘 refresh token, 多账户使用英文逗号 (,) 分隔*</li>
 <li><code>GP_TOKEN</code> [必填]在 Action 中运行时更新 refresh token</li>
@@ -845,22 +851,22 @@ jobs:
 <p>这些 <code>Secrets</code> 将加密存储在 GitHub, 无法被直接读取, 但可以在 Action 中使用</p>
 </blockquote>
 <p>正确添加后应显示在 <code>Repository secrets</code> 区域而非 <code>Environment secrets</code>.</p>
-<p>我的<code>secrets</code>如图</p>
+<p>我的<code>secrets</code>如图,<font color="red">添加3个token这一步，放到获取3个token后，再做，这里先继续往下获取3个重要的TOKEN</font></p>
 <p><img src="https://img.chenuon.cn/img/secrets.png" alt="secrets"></p>
 <table>
 <tr>
 <td bgcolor=#FFFF0>
-<strong><font color="#FF0000">获取REFRESH_TOKENS</font></strong>
+<strong><font color="#FF0000">获取REFRESH_TOKENS(注意此为 TOKEN 1)</font></strong>
 </td>
 </tr>
 </table>
 
-<p><a href="https://alist.nn.ci/tool/aliyundrive/request" target="_blank" rel="noopener">点击获取</a>，此处2种方式均可</p>
-<p><img src="https://img.chenuon.cn/img/REFRESH_TOKENS.png" alt="REFRESH_TOKENS"></p>
+<p><a href="https://alist.nn.ci/zh/guide/drivers/aliyundrive.html" target="_blank" rel="noopener">点击获取</a>，点一下，出来二维码，手机阿里云盘APP扫码后再点一下，下面会出来TOKEN</p>
+<p><img src="https://img.chenuon.cn/img/REFRESH_TOKEN1.png" alt="REFRESH_TOKEN1"></p>
 <table>
 <tr>
 <td bgcolor=#FFFF0>
-<strong><font color="#FF0000">获取GP_TOKEN</font></strong>
+<strong><font color="#FF0000">创建获取GP_TOKEN(注意此为 TOKEN 2)</font></strong>
 </td>
 </tr>
 </table>
@@ -869,12 +875,16 @@ jobs:
 <p>点击 GitHub 头像 -&gt; <code>Settings</code> (注意与配置 Secrets 不是同一个 Settings) -&gt; <code>Developer settings</code> -&gt; <code>Personal access token</code> -&gt; <code>Tokens(classic)</code> -&gt; <code>Generate new token</code></p>
 </blockquote>
 <blockquote>
-<p>权限选择 <code>repo</code>, 不然不能更新 Secrets. <u>记住生成的 token, 离开页面后无法查看</u></p>
+<p><font color="red">权限一定要选择 <code>repo</code>, 不然会报错，不能更新 Secrets. <u>记住生成的 token, 离开页面后无法查看</u></font></p>
 </blockquote>
+<img src="https://img.chenuon.cn/img/user_setting1.png" alt="user_setting1" style="zoom:50%;" />
+
+<p><img src="https://img.chenuon.cn/img/user_setting2.png" alt="user_setting2"></p>
+<p><img src="https://img.chenuon.cn/img/user_setting3.png" alt="user_setting3"></p>
 <table>
 <tr>
 <td bgcolor=#FFFF0>
-<strong><font color="#FF0000">获取PUSHPLUS_TOKEN</font></strong>
+<strong><font color="#FF0000">获取PUSHPLUS_TOKEN(注意此为 TOKEN 3)</font></strong>
 </td>
 </tr>
 </table>
@@ -904,7 +914,7 @@ jobs:
 <ul>
 <li><p>手动运行</p>
 <ul>
-<li><p>在仓库的 <code>Actions</code> -&gt; <code>Aliyun Signin</code> -&gt; <code>Run workflow</code> 中点击 <code>Run workflow</code> 按钮运行(4是查看结果)</p>
+<li><p>在仓库的 <code>Actions</code> -&gt; <code>Aliyun Signin</code> -&gt; <code>Run workflow</code> 中点击 <code>Run workflow</code> 按钮运行(4是查看结果)点了<code>run workflow</code>之后不要动，不要乱点，等结果出来，无论是<code>打勾</code>，还是<code>打叉</code></p>
 <p><img src="https://img.chenuon.cn/img/action_run.png" alt="action_run.png"></p>
 </li>
 </ul>
@@ -917,11 +927,13 @@ jobs:
 </ul>
 <p>这里注意下github的action配额，别乱用，不过2000min/mouth也够用，如下图</p>
 <p><img src="https://img.chenuon.cn/img/action_time.png" alt="action_time.png"></p>
-<h3 id="查看结果"><a href="#查看结果" class="headerlink" title="查看结果"></a>查看结果</h3><p>运行完后点进去即可查看原因，只要出现签到成功即可，图中的这种错误作者告知貌似还没避免，等github原作者通知</p>
-<p><img src="https://img.chenuon.cn/img/run_faq.png" alt="run_faq.png"></p>
-<p><img src="https://img.chenuon.cn/img/faq1.png" alt="faq1.png"></p>
-<p><img src="https://img.chenuon.cn/img/faq2.png" alt="faq2"></p>
-<p>over..</p>
+<h3 id="查看结果"><a href="#查看结果" class="headerlink" title="查看结果"></a>查看结果</h3><p>运行完后，等一会，如果出错，点进去即可查看原因，</p>
+<div style="width:450px;height:30px;background:#FFFF00;text-align:left;line-height:30px;">
+    <strong><font color="#FF0000">我这里错误的原因就是因为创建GP_TOKEN时没有选择repo</font></strong>
+</div>
+
+<p><img src="https://img.chenuon.cn/img/run_over.png" alt="run_faq.png"></p>
+<p>over…有什么问题联系我，首页有我联系方式</p>
 <p>感谢原作者开源分享，源码如下：</p>
 <p><a href="https://github.com/ImYrS/aliyun-auto-signin/blob/main/How-To-Use-Action.md" target="_blank" rel="noopener">https://github.com/ImYrS/aliyun-auto-signin/blob/main/How-To-Use-Action.md</a></p>
 
@@ -938,10 +950,10 @@ jobs:
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>无需服务器阿里云盘自动签到并推送消息</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">913</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">1.1k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="塵幽">塵幽</a></p>
     <p><span class="copy-title">发布时间:</span>2023-03-13, 16:01:47</p>
-    <p><span class="copy-title">最后更新:</span>2023-03-13, 22:10:03</p>
+    <p><span class="copy-title">最后更新:</span>2023-03-14, 21:58:20</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2023/03/13/code-aliyun-auto-sign/" title="无需服务器阿里云盘自动签到并推送消息">https://www.chenuon.cn/2023/03/13/code-aliyun-auto-sign/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -1006,7 +1018,7 @@ jobs:
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#阿里云盘','#签到','#github','#git','#hexo','#alist','#drive','#网盘','#emlog','#ssl','#nginx','#node','#linux','#typecho','#Markdown','#导航','#分类','#beian','#terse','#7tec','#塵幽','#gitee','#coding','#阿里code','#plan','#2020','#python','#pycharm','#cmder','#腾讯云对象存储','#cos','#自定义域名','#多仓库','#远程控制','#电脑控制手机','#手机控制电脑','#云函数','#天翼云盘','#favicon','#ico','#windows7','#局域网共享','#wps','#pdf','#word','#云表','#erp系统','#xlserp系统','#xls系统','#生产erp系统','#xlserp生产系统',],
+            'data': ['#alist','#drive','#网盘','#阿里云盘','#emlog','#ssl','#签到','#github','#git','#hexo','#nginx','#node','#linux','#typecho','#Markdown','#导航','#分类','#beian','#terse','#7tec','#塵幽','#plan','#gitee','#coding','#阿里code','#2020','#python','#pycharm','#cmder','#腾讯云对象存储','#cos','#自定义域名','#多仓库','#远程控制','#电脑控制手机','#手机控制电脑','#云函数','#天翼云盘','#favicon','#ico','#windows7','#局域网共享','#wps','#pdf','#word','#云表','#erp系统','#xlserp系统','#xls系统','#生产erp系统','#xlserp生产系统',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
