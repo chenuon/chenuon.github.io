@@ -129,7 +129,7 @@
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="emlog">emlog<small>(1)</small></div>
+                        <li><div data-rel="hexo">hexo<small>(3)</small></div>
                             
                         </li>
                             
@@ -137,7 +137,7 @@
                             
                         </li>
                             
-                        <li><div data-rel="hexo">hexo<small>(3)</small></div>
+                        <li><div data-rel="typecho">typecho<small>(2)</small></div>
                             
                         </li>
                             
@@ -145,17 +145,13 @@
                             
                         </li>
                             
-                        <li><div data-rel="typecho">typecho<small>(2)</small></div>
+                        <li><div data-rel="emlog">emlog<small>(1)</small></div>
                             
                         </li>
                             
                     </ul>
                 
             </li>
-            
-        
-    
-        
             
         
     
@@ -204,6 +200,10 @@
             <li><div data-rel="xls开发">xls开发<small>(7)</small></div>
                 
             </li>
+            
+        
+    
+        
             
         
     
@@ -285,14 +285,6 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color1">emlog</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color4">ssl</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color1">nginx</a>
     </li>
     
@@ -321,15 +313,19 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color1">beian</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">emlog</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color1">terse</a>
     </li>
     
     <li class="article-tag-list-item">
         <a class="color5">7tec</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">beian</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -397,19 +393,19 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">云函数</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">天翼云盘</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color3">favicon</a>
     </li>
     
     <li class="article-tag-list-item">
         <a class="color4">ico</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">云函数</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">天翼云盘</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -454,6 +450,10 @@
     
     <li class="article-tag-list-item">
         <a class="color1">xlserp生产系统</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">ssl</a>
     </li>
     
     <div class="clearfix"></div>
@@ -624,7 +624,7 @@
         
         <a  class="有感而发 "
            href="/2020/01/14/mind-code-change-typecho/"
-           data-tag="emlog,typecho,terse,7tec"
+           data-tag="typecho,emlog,terse,7tec"
            data-author="" >
             <span class="post-title" title="小站更改程序源码为typecho">小站更改程序源码为typecho</span>
             <span class="post-date" title="2020-01-14 23:49:44">2020/01/14</span>
@@ -924,7 +924,7 @@ ssh git@ip    //ssh链接看是否成功，不行就重新配置一次，记得�
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#alist','#drive','#网盘','#阿里云盘','#签到','#github','#git','#hexo','#emlog','#ssl','#nginx','#node','#linux','#typecho','#Markdown','#导航','#分类','#terse','#7tec','#beian','#塵幽','#plan','#gitee','#coding','#阿里code','#2020','#python','#pycharm','#cmder','#腾讯云对象存储','#cos','#自定义域名','#多仓库','#远程控制','#电脑控制手机','#手机控制电脑','#云函数','#天翼云盘','#favicon','#ico','#windows7','#局域网共享','#wps','#pdf','#word','#云表','#erp系统','#xlserp系统','#xls系统','#生产erp系统','#xlserp生产系统',],
+            'data': ['#alist','#drive','#网盘','#阿里云盘','#签到','#github','#git','#hexo','#nginx','#node','#linux','#typecho','#Markdown','#导航','#分类','#beian','#emlog','#terse','#7tec','#塵幽','#plan','#gitee','#coding','#阿里code','#2020','#python','#pycharm','#cmder','#腾讯云对象存储','#cos','#自定义域名','#多仓库','#远程控制','#电脑控制手机','#手机控制电脑','#favicon','#ico','#云函数','#天翼云盘','#windows7','#局域网共享','#wps','#pdf','#word','#云表','#erp系统','#xlserp系统','#xls系统','#生产erp系统','#xlserp生产系统','#ssl',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
