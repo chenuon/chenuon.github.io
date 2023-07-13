@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>最近hexo+git+nginx完成进度以及后期计划和安排 | 塵幽·点滴</title>
-  <meta name="keywords" content=" git , gitee , coding , 阿里code ">
-  <meta name="description" content="最近hexo+git+nginx完成进度以及后期计划和安排 | 塵幽·点滴">
+  <title>手机无需root安装termux搭建(阿里云盘&amp;天翼云盘)等各种签到程序的框架 | 塵幽·点滴</title>
+  <meta name="keywords" content=" 阿里云盘 , root , termux , 天翼云盘 ">
+  <meta name="description" content="手机无需root安装termux搭建(阿里云盘&amp;天翼云盘)等各种签到程序的框架 | 塵幽·点滴">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="building……">
 <meta property="og:type" content="website">
@@ -738,9 +738,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-mind-recent-study" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-way-phone-termux" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">最近hexo+git+nginx完成进度以及后期计划和安排</h1>
+        <h1 class="article-title">手机无需root安装termux搭建(阿里云盘&amp;天翼云盘)等各种签到程序的框架</h1>
     
     <div class="article-meta">
         
@@ -748,32 +748,32 @@
         
         <span class="book">
             
-                <a  data-rel="有感而发">有感而发</a>
+                <a  data-rel="技巧应用">技巧应用</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color4">git</a>
+            <a class="color5">阿里云盘</a>
             
-            <a class="color1">gitee</a>
+            <a class="color5">root</a>
             
-            <a class="color2">coding</a>
+            <a class="color2">termux</a>
             
-            <a class="color2">阿里code</a>
+            <a class="color5">天翼云盘</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-02-01 20:20:19'>2020-02-01 19:25</time>
+        创建时间:<time class="date" title='更新时间: 2023-07-13 17:27:49'>2023-07-13 14:00</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:220</span>
+        <span>字数:1.5k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -792,7 +792,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#目前进度"><span class="toc-text">目前进度</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#近期计划和安排"><span class="toc-text">近期计划和安排</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、https"><span class="toc-text">1、https</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、valine"><span class="toc-text">2、valine</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、多仓库备份"><span class="toc-text">3、多仓库备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、check-amp-online"><span class="toc-text">4、check &amp; online</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、termux安装"><span class="toc-text">1、termux安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、环境"><span class="toc-text">2、环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、签到源码"><span class="toc-text">3、签到源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、安装框架"><span class="toc-text">4、安装框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、访问"><span class="toc-text">5、访问</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、框架配置"><span class="toc-text">6、框架配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、结束"><span class="toc-text">7、结束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8、alist延伸"><span class="toc-text">8、alist延伸</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -808,17 +808,72 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="目前进度"><a href="#目前进度" class="headerlink" title="目前进度"></a>目前进度</h1><p>目前已经完成hexo通过git搭建到个人云服务器的过程，<br>当初就是为了3-hexo主题研究git、hexo、markdown、nginx等这一切<br>已完成进度如下：  </p>
-<ul>
-<li>1、安装node.js、git并做好免密、hexo并且本地测试ok  </li>
-<li>2、主题已完成切换，并且解决列表顺序问题，关闭阅读统计  </li>
-<li>3、上传个人服务器，并成功解决git钩子、hexo分类/标签等问题  </li>
-</ul>
-<p>接下来的安排如下：</p>
-<h1 id="近期计划和安排"><a href="#近期计划和安排" class="headerlink" title="近期计划和安排"></a>近期计划和安排</h1><h3 id="1、https"><a href="#1、https" class="headerlink" title="1、https"></a><em>1、https</em></h3><p>解决网站使用https访问的问题，主要方向为nginx设置端口问题</p>
-<h3 id="2、valine"><a href="#2、valine" class="headerlink" title="2、valine"></a><em>2、valine</em></h3><p>增加valine评论系统，前段代码添加，官网有教程</p>
-<h3 id="3、多仓库备份"><a href="#3、多仓库备份" class="headerlink" title="3、多仓库备份"></a><em>3、多仓库备份</em></h3><p>使用gitee/coding/code.aliyun等多方位备份</p>
-<h3 id="4、check-amp-online"><a href="#4、check-amp-online" class="headerlink" title="4、check &amp; online"></a><em>4、check &amp; online</em></h3><p>最后检查各个配置和源码，准备正式上线正式服务器</p>
+        <p>旧手机就行，不用root，即可运行各种签到小程序（阿里云盘/天翼云盘等等），</p>
+<p>为什么用这个框架，而放弃了github的action和青龙面板，因为他可以再签到失败后继续进行签到任务，直至成功为止，放心，这个时间不是很频繁，一天就几次，可以设置的，而且push通知的也可以设置失败几次之后才通知你</p>
+<p>话不多说，直接进入主题</p>
+<table>
+<td bgcolor=#FFFF0>
+<strong><font color="#FF0000">友情提示：文章很长</font></strong>
+</td>
+</table>
+
+<h2 id="1、termux安装"><a href="#1、termux安装" class="headerlink" title="1、termux安装"></a>1、termux安装</h2><p>我自己安装的是二次开发的版本，免去手动代码切换源的麻烦，下载地址在下面，随便哪个版本都行</p>
+<p><a href="https://www.123pan.com/s/80AbVv-z5cJH.html" target="_blank" rel="noopener">https://www.123pan.com/s/80AbVv-z5cJH.html</a></p>
+<p>提取码:md6O</p>
+<p>安装完后打开，等待加载完毕，手机左侧左上角往右滑一下，切换源，选择清华</p>
+<p><img src="https://img.chenuon.cn/img/youhua.PNG" alt="youhua"></p>
+<p>当然你如果介意的话，可以去官方下载，</p>
+<p><a href="https://f-droid.org/zh_Hans/packages/com.termux/" target="_blank" rel="noopener">https://f-droid.org/zh_Hans/packages/com.termux/</a></p>
+<p>安装后手动切换清华源，复制以下代码搭配termux内运行即可</p>
+<pre><code>sed -i &#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main stable main@&#39; $PREFIX/etc/apt/sources.list
+apt update &amp;&amp; apt upgrade</code></pre><p>然后再运行以下命令，授权termux的文件管理权限</p>
+<pre><code>termux-setup-storage</code></pre><p>手机会弹出提示，允许即可</p>
+<h2 id="2、环境"><a href="#2、环境" class="headerlink" title="2、环境"></a>2、环境</h2><p>需要py3</p>
+<pre><code>pkg install python</code></pre><h2 id="3、签到源码"><a href="#3、签到源码" class="headerlink" title="3、签到源码"></a>3、签到源码</h2><p>下载地址：<a href="https://github.com/qd-today/qd/archive/refs/heads/master.zip" target="_blank" rel="noopener">https://github.com/qd-today/qd/archive/refs/heads/master.zip</a></p>
+<p>玩github的都知道这个网站了，我这个是直接下载源码，不是下载releases里面的，目前部分签到程序源码已经</p>
+<p>更新要用最新版才可以，但是作者还没有更新框架，源码是20230626，releases是20230618，</p>
+<p>手机存储根目录建立一个<code>qiandao</code>的文件夹，然后想办法把下载的里面的文件放进去,注意：qiandao这个是源码的根目录</p>
+<h2 id="4、安装框架"><a href="#4、安装框架" class="headerlink" title="4、安装框架"></a>4、安装框架</h2><p>回到手机的termux，<code>ls</code>一下，可以看到只有一个<code>storage</code>，然后一下命令一个一个输入，</p>
+<pre><code>cd storage 
+ls
+cd shared
+ls
+cd qiandao
+ls</code></pre><p>此时源码所有文件即可显示出来，我是手动将所有文件全部复制粘贴到<code>qiandan</code>文件夹内的.</p>
+<p><img src="https://img.chenuon.cn/img/qiandaols.PNG" alt="qiandaols"></p>
+<p>我当时目录是storage/shared/Download/qiandao</p>
+<p>进入框架源码根目录之后，这里注意下，我一开始安装出了问题，经大佬提醒我要挂魔法，我挂了魔法之后安装顺利，不过又有人提出可以临时换源，我没试过，你们可以试试，参考方法如下</p>
+<p><a href="https://zhuanlan.zhihu.com/p/551940762" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/551940762</a></p>
+<pre><code>1.临时换源：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple package_name
+2.永久换源：
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</code></pre><p>然后运行</p>
+<pre><code>pip3 install -r requirements.txt</code></pre><p>这里产生的问题比较多，我在这个地方停留了3天，请教了几个大佬才弄明白。</p>
+<pre><code>cp config.py local_config.py</code></pre><p>到这里就全部配置ok</p>
+<h2 id="5、访问"><a href="#5、访问" class="headerlink" title="5、访问"></a>5、访问</h2><p>为了方便使用。可以用电脑进行ssh连接</p>
+<p>安装</p>
+<pre><code>pkg install openssh -y</code></pre><p>设置密码</p>
+<pre><code>passwd</code></pre><p>启动ssh</p>
+<pre><code>sshd</code></pre><p>然后<code>ifconfig</code>查看本机ip，进行连接即可，我旧手机没有插卡，连的wifi，所以可以从wifi那里点开就看得到ip</p>
+<p>我用的finashell进行ssh连接的，用户默认root，密码就是刚刚设置的密码，端口注意是8022</p>
+<p>因为这个框架程序运行是一直开启的，所以建议大家安装一个<code>screen</code>多窗口工具</p>
+<pre><code>pkg install screen</code></pre><p>screen使用方法稍微讲一下，不懂百度，如下：</p>
+<p>建立一个新的<code>qiandao</code>窗口</p>
+<pre><code>screen -S qiandao</code></pre><p>然后运行框架</p>
+<pre><code>python run.py</code></pre><p>出现<code>started on  0.0.0.0:8923</code>就没问题了。</p>
+<p>然后电脑打开浏览器，IP:8923访问即可</p>
+<h2 id="6、框架配置"><a href="#6、框架配置" class="headerlink" title="6、框架配置"></a>6、框架配置</h2><p>打开后注册一个账号进去，页面分上下两部分：上面是你要建立的签到任务清单，下面是你的模板清单，先装模板，才能进行签到任务的建立。我的如下图</p>
+<p><img src="https://img.chenuon.cn/img/myqd.PNG" alt="myqd"></p>
+<p>除了阿里云的模板需要从我最前面那个下载termux的网盘内下载哪个<code>阿里云盘.har</code>，点<code>我的模板</code>旁边的+号，然后上传，点保存。其他的模板都可以再那个公共模板内找到。</p>
+<p>推送方式在工具箱内，各种推送工具一应俱全，先工具箱-&gt;推送注册(意思就是填写你推送工具的相关信息)，然后再到推送设置里面选择你推送的工具就可，其他的设置自行了解</p>
+<p>我这里说一下pushplus的，因为这个里面没有包含，把下面的XXX换成你的token，然后header留空不用填</p>
+<pre><code>http://www.pushplus.plus/send?token=XXX={t}&amp;content={log}&amp;template=html</code></pre><p><img src="https://img.chenuon.cn/img/pushplus.PNG" alt="pushplus"></p>
+<p>不过我研究了pushplus之后，发现推送过来的信息看不完整，不知道是成功还是没成功，最后我还是用了另外一个：wxpusher，使用方式这里就请大家自行折腾，很简单的。微信扫码登陆，注册一个，获取token，然后再扫码关注就能收到信息了，传送门<a href="https://wxpusher.zjiecode.com/docs/#/?id=%e8%8e%b7%e5%8f%96apptoken" target="_blank" rel="noopener">https://wxpusher.zjiecode.com/docs/#/?id=%e8%8e%b7%e5%8f%96apptoken</a></p>
+<h2 id="7、结束"><a href="#7、结束" class="headerlink" title="7、结束"></a>7、结束</h2><p>ok，结束，有什么问题欢迎大家回复。</p>
+<p>之前我发的github通过action方式签到阿里云盘的。貌似原作者弃坑了。不能refresh_token了。所以大家酌情考虑，有vps的可以弄青龙面板，不过这都是我折腾过了之后的最终选择，一个旧手机就可以搞定所有的。</p>
+<h2 id="8、alist延伸"><a href="#8、alist延伸" class="headerlink" title="8、alist延伸"></a>8、alist延伸</h2><p>同理，通过ssh连接后，安装alist，挂载各类网盘，然后通过nova播放器，可以获取海报墙。</p>
+<p>前提是你的网盘内容是已经刮削好的。</p>
+<p>这样一个简单的影视系统也可以完成。alist大部分网盘走的是302，所以旧手机不需要承担视频下载流量</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 69395866@qq.com </span>
@@ -828,12 +883,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>最近hexo+git+nginx完成进度以及后期计划和安排</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">220</span></p>
+    <p><span class="copy-title">文章标题:</span>手机无需root安装termux搭建(阿里云盘&amp;天翼云盘)等各种签到程序的框架</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">1.5k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="塵幽">塵幽</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-02-01, 19:25:23</p>
-    <p><span class="copy-title">最后更新:</span>2020-02-01, 20:20:19</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/02/01/mind-recent-study/" title="最近hexo+git+nginx完成进度以及后期计划和安排">https://www.chenuon.cn/2020/02/01/mind-recent-study/</a>
+    <p><span class="copy-title">发布时间:</span>2023-07-13, 14:00:27</p>
+    <p><span class="copy-title">最后更新:</span>2023-07-13, 17:27:49</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2023/07/13/way-phone-termux/" title="手机无需root安装termux搭建(阿里云盘&amp;天翼云盘)等各种签到程序的框架">https://www.chenuon.cn/2023/07/13/way-phone-termux/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
